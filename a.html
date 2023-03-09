@@ -43,13 +43,13 @@
         let MONEY = document.getElementById('Money').value
         let Result
 
-        if (From == 'VND' && To == 'USD') {
+        if (From === 'VND' && To === 'USD') {
             Result = (MONEY/23000) + " USD";
         } else
-        if (From == 'USD' && To == 'VND') {
+        if (From === 'USD' && To === 'VND') {
             Result = (MONEY * 23000) + "V ND";
         } else
-        if (From == 'VND' && To == ' VND') {
+        if (From === 'VND' && To === ' VND') {
             Result = MONEY + " VND";
         } else {
             Result = MONEY + " USD";}
